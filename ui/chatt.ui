@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>40</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">  QWidget {
+       
+font-size:13px;
+            }
+QLabel{color: rgb(91, 91, 91);}
+QLabel#label_8{
+color: rgb(0,0,0);
+font-size:30px
+
+}
+QLabel#label_9{background-image: url(:/newPrefix/appointment.png);}
+QLabel#label_7{
+	color: rgb(91, 91, 91);}
+QPushButton#pushButton{
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,&quot;Segoe UI&quot;,Roboto,Ubuntu,&quot;Helvetica Neue&quot;,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+ }
+
+
+QPushButton#pushButton:hover{
+background-color: rgb(0, 80, 138);
+cursor:pointer;
+}
+
+QPushButton#pushButton_2:hover{
+color: rgb(0, 80, 138);
+cursor:pointer;}</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhFormattedNumbersOnly|Qt::ImhMultiLine|Qt::ImhTime</set>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>371</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_8">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Kristen ITC</family>
+        <pointsize>-1</pointsize>
+        <weight>62</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Live chat</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>30</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>500</y>
+     <width>361</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Send Message</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="styleSheet">
+       <string notr="true">border:none;
+text-decoration:underline;</string>
+      </property>
+      <property name="text">
+       <string>Switch to automatic diagnosis?</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

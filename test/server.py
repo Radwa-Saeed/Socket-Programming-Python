@@ -3,14 +3,14 @@ import select
 import mysql.connector
 import sys
 
-HEADER_LENGTH = 10
+HEADER_LENGTH = 100
 
 IP = "127.0.0.1"
 PORT = 5000
 
 # Create a socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
+server_socket.settimeout(500)
 # SO_ - socket option ... Sets REUSEADDR (as a socket option) to 1 on socket
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 

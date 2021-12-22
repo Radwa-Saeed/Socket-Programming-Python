@@ -1,59 +1,61 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'symptom2.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-
-class Ui_MainWindow(QtWidgets.QMainWindow):
-    def __init__(self):
-        super(Ui_MainWindow,self).__init__()
-        self.setupUi(self)
-
+class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(500, 600)
         MainWindow.setMinimumSize(QtCore.QSize(500, 600))
         MainWindow.setMaximumSize(QtCore.QSize(500, 600))
         MainWindow.setStyleSheet("  QWidget {\n"
-                                 "            \n"
-                                 "    background-color: rgb(255, 255, 255);\n"
-                                 "            color:  rgb(52, 143, 217);\n"
-                                 "font-weight: 500;\n"
-                                 "font-size:13px;\n"
-                                 "            }\n"
-                                 "QLabel{color: rgb(91, 91, 91);}\n"
-                                 "QLabel#label_8{\n"
-                                 "color: rgb(0,0,0);\n"
-                                 "font-size:30px\n"
-                                 "\n"
-                                 "}\n"
-                                 "QLabel#label_9{background-image: url(:/newPrefix/appointment.png);}\n"
-                                 "QLabel#label_7{\n"
-                                 "    color: rgb(91, 91, 91);}\n"
-                                 "QPushButton#pushButton{\n"
-                                 "  background-color: #0078d0;\n"
-                                 "  border: 0;\n"
-                                 "  border-radius: 20px;\n"
-                                 "  color: #fff;\n"
-                                 "  display: inline-block;\n"
-                                 "  font-family: system-ui,-apple-system,system-ui,\"Segoe UI\",Roboto,Ubuntu,\"Helvetica Neue\",sans-serif;\n"
-                                 "  font-size: 18px;\n"
-                                 "  font-weight: 600;\n"
-                                 "  outline: 0;\n"
-                                 "  padding: 16px 21px;\n"
-                                 "  position: relative;\n"
-                                 "  text-align: center;\n"
-                                 "  text-decoration: none;\n"
-                                 "  transition: all .3s;\n"
-                                 " }\n"
-                                 "\n"
-                                 "\n"
-                                 "QPushButton#pushButton:hover{\n"
-                                 "background-color: rgb(0, 80, 138);\n"
-                                 "cursor:pointer;\n"
-                                 "}\n"
-                                 "\n"
-                                 "QPushButton#pushButton_2:hover{\n"
-                                 "color: rgb(0, 80, 138);\n"
-                                 "cursor:pointer;}")
+"            \n"
+"    background-color: rgb(255, 255, 255);\n"
+"            color:  rgb(52, 143, 217);\n"
+"font-weight: 500;\n"
+"font-size:13px;\n"
+"            }\n"
+"QLabel{color: rgb(91, 91, 91);}\n"
+"QLabel#label_8{\n"
+"color: rgb(0,0,0);\n"
+"font-size:30px\n"
+"\n"
+"}\n"
+"QLabel#label_9{background-image: url(:/newPrefix/appointment.png);}\n"
+"QLabel#label_7{\n"
+"    color: rgb(91, 91, 91);}\n"
+"QPushButton#pushButton{\n"
+"  background-color: #0078d0;\n"
+"  border: 0;\n"
+"  border-radius: 20px;\n"
+"  color: #fff;\n"
+"  display: inline-block;\n"
+"  font-family: system-ui,-apple-system,system-ui,\"Segoe UI\",Roboto,Ubuntu,\"Helvetica Neue\",sans-serif;\n"
+"  font-size: 18px;\n"
+"  font-weight: 600;\n"
+"  outline: 0;\n"
+"  padding: 16px 21px;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  text-decoration: none;\n"
+"  transition: all .3s;\n"
+" }\n"
+"\n"
+"\n"
+"QPushButton#pushButton:hover{\n"
+"background-color: rgb(0, 80, 138);\n"
+"cursor:pointer;\n"
+"}\n"
+"\n"
+"QPushButton#pushButton_2:hover{\n"
+"color: rgb(0, 80, 138);\n"
+"cursor:pointer;}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.widget = QtWidgets.QWidget(self.centralwidget)
@@ -73,7 +75,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.verticalLayout_2.addWidget(self.label_7)
         self.pushButton_2 = QtWidgets.QPushButton(self.widget)
         self.pushButton_2.setStyleSheet("border:none;\n"
-                                        "text-decoration:underline;")
+"text-decoration:underline;")
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout_2.addWidget(self.pushButton_2)
         self.widget1 = QtWidgets.QWidget(self.centralwidget)
@@ -167,7 +169,6 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.pushButton.setText(_translate("MainWindow", "Submit symptoms"))
         self.label_7.setText(_translate("MainWindow", "Once you submit we will get back to you again very shortly with the diagnosis."))
         self.pushButton_2.setText(_translate("MainWindow", "Switch to live chat instead?"))
-        self.pushButton_2.clicked.connect(lambda:self.Live_Chat())
         self.label.setText(_translate("MainWindow", "Do you have a fever?"))
         self.comboBox_2.setItemText(0, _translate("MainWindow", "Yes"))
         self.comboBox_2.setItemText(1, _translate("MainWindow", "No"))
@@ -187,19 +188,5 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         self.comboBox_6.setItemText(0, _translate("MainWindow", "Yes"))
         self.comboBox_6.setItemText(1, _translate("MainWindow", "No"))
         self.label_8.setText(_translate("MainWindow", "What Are Your Symptoms?"))
-#import images_rc
 
-    def Live_Chat(self):
-        from chat import Ui_Form as app2
-        self.window=app2()
-        self.window.show()
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
+import images_rc
